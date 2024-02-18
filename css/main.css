@@ -103,7 +103,6 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
     margin: 0;
   }
 
@@ -138,7 +137,7 @@ textarea {
     width: 55%;
   }
   footer .contact {
-    margin: 50px 0;
+    margin: 50px;
   }
 
   footer .social-icons {
@@ -178,9 +177,6 @@ textarea {
     width: 63%;
     margin: 30px 0;
   } 
-  article {
-    display: block;
-  }
 
   .features .features-items {
     display: flex;
@@ -198,7 +194,7 @@ textarea {
   }
  
   .reviews h2 {
-    margin: 40px;
+    margin-bottom: 40px;
   }
  .reviews h3 {
   width: 55%;
@@ -241,7 +237,7 @@ textarea {
     margin-bottom: 40px;
   }
   .faq-content {
-    margin: 40px;
+    margin: 50px;
   }
 /* ==========================================================================
    Helper classes
@@ -251,8 +247,7 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
