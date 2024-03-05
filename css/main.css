@@ -94,12 +94,15 @@ textarea {
    body {
           font-family: 'Open Sans', sans-serif;
           font-size: 1em;
+          color: #e2e3ed;
           text-align: left;
 }
 
    ul,
    ol {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
 
    }
 
@@ -110,21 +113,24 @@ textarea {
    }
 
    h1 {
-    font-size: 60px;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+    color: #e2e3ed;
    }
 
    h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 1em;
-
+        font-size: 1.87em;
+        font-weight: 500;
    }
 
    h3,
    h4 {
         font-family: 'Poppins', sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
+        font-weight: 500;
         margin: 20px 0;
-
    }
 
    p { 
@@ -142,7 +148,6 @@ textarea {
 
    address {
     font-style: normal;
-
    }
 
   .content-wrapper {
@@ -154,6 +159,7 @@ textarea {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    background: #202322;
   }
 
   header .content-wrapper {
@@ -165,6 +171,7 @@ textarea {
   }
 
   .header-divider {
+    color: #3a3a3a;
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
@@ -172,6 +179,9 @@ textarea {
 
    header nav {
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   header nav ul {
@@ -180,7 +190,20 @@ textarea {
     width: 100%;
   }
 
+  header nav ul li {
+    font-size: 1.125em;
+  }
+
+  .features {
+    background: #2a423a;
+  }
+
+  .reviews {
+    background: #527158;
+  }
+
   footer {
+    background: #3a3a3a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,21 +216,24 @@ textarea {
 
   footer .content-wrapper {
     width: 55%;
+ 
   }
   footer .contact {
-    margin: 50px;
+    margin-bottom: 50px;
   }
 
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  
   }
 
   footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   footer .copyright {
     margin: 20px 0;
@@ -218,9 +244,20 @@ textarea {
     justify-content: center;
   }
 
+  .hero-area h1 {
+    font-size: 2.25em;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
   aside {
     display: flex;
     justify-content: center;
+  }
+
+  aside .form {
+    margin-top: 30px;
   }
 
   .features {
@@ -243,16 +280,19 @@ textarea {
     flex-flow: row wrap;
   }
   .features p {
+    text-align: center;
     margin: 0;
  } 
 
   .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
   }
  
   .reviews h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
  .reviews h3 {
   width: 55%;
@@ -263,11 +303,13 @@ textarea {
  ============================================================================================================*/
 
   .mission {
+    background-color: #527158;
     display: flex;
     justify-content: center;
   }
 
   .contact-section {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
   }
@@ -280,6 +322,7 @@ textarea {
       faq page
 ============================================================================================================*/
   .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
   }
@@ -293,9 +336,13 @@ textarea {
   }
   .faq h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
   .faq-content {
-    margin: 50px;
+    margin-bottom: 50px;
+  }
+  .faq-content h4 {
+    line-height: 1.333;
   }
 /* ==========================================================================
    Helper classes
@@ -384,7 +431,33 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+   aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+   @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
   
   .content-wrapper {
