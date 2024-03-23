@@ -328,16 +328,17 @@ textarea {
 
   .map figure {
     width: 100%;
-    height: 0;
-    padding-bottom: 125%;
-    overflow: hidden;
     position: relative;
+    padding-bottom: 125%;
+    height: 0;
+    overflow: hidden;
+    
   }
 
   .map iframe {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
   }
@@ -534,23 +535,31 @@ textarea {
   .reviews article {
     display: flex;
     justify-content: space-between;
-
   }
   .reviews article div {
     width: 49%;
 
   }
+  .map figure {
+    padding-bottom: 55%;
+  }
 
+  .map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
   footer .content-wrapper {
-    width: 65%;
-    
+    width: 65%;  
   }
 
   .footer-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
   }
 
   footer .contact {
@@ -636,6 +645,9 @@ textarea {
   /*===============================================================
   About page
   ===============================================================*/
+  .map figure {
+    padding-bottom: 37.5%;
+  }
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
